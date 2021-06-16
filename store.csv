@@ -1,0 +1,69 @@
+id,vermelho-numero,vermelho-tipo,laranja-numero,laranja-tipo,amarelo-numero,amarelo-tipo,azul-numero,azul-tipo
+167,2,balofo,5,lerdo,4,corredor,,
+168,5,lerdo,5,lerdo,2,balofo,,
+169,6,corredor,6,corredor,4,lerdo,,
+170,3,balofo,3,balofo,3,corredor,1,lerdo
+171,5,lerdo,4,lerdo,1,balofo,1,lerdo
+172,7,corredor,4,corredor,2,lerdo,1,lerdo
+173,3,balofo,1,balofo,3,corredor,2,lerdo
+174,6,lerdo,4,lerdo,1,balofo,3,lerdo
+175,7,corredor,5,corredor,2,lerdo,1,balofo
+176,5,lerdo,2,balofo,2,lerdo,1,balofo
+177,6,lerdo,3,lerdo,3,lerdo,2,corredor
+178,5,lerdo,3,lerdo,3,lerdo,2,corredor
+179,2,balofo,5,lerdo,3,corredor,1,abominação
+180,7,corredor,1,balofo,1,abominação,2,lerdo
+181,6,lerdo,1,abominação,1,balofo,2,lerdo
+182,1,abominação,5,corredor,3,lerdo,1,lerdo
+183,6,lerdo,3,balofo,4,corredor,1,lerdo
+184,5,lerdo,4,lerdo,1,balofo,2,corredor
+185,3,balofo,5,corredor,4,lerdo,1,lerdo
+186,6,corredor,6,lerdo,3,corredor,1,balofo
+187,8,lerdo,5,corredor,2,balofo,1,lerdo
+188,7,lerdo,2,balofo,2,lerdo,1,balofo
+189,3,balofo,4,lerdo,4,lerdo,2,corredor
+190,7,corredor,5,lerdo,3,lerdo,1,balofo
+191,2,balofo,5,lerdo,3,corredor,1,abominação
+192,7,corredor,1,balofo,1,abominação,2,lerdo
+193,6,lerdo,1,abominação,1,balofo,2,lerdo
+194,1,abominação,5,corredor,3,lerdo,1,lerdo
+195,6,lerdo,3,balofo,4,corredor,1,lerdo
+196,5,lerdo,4,lerdo,1,balofo,2,corredor
+197,3,balofo,5,corredor,4,lerdo,1,lerdo
+198,6,corredor,6,lerdo,3,corredor,1,balofo
+199,8,lerdo,5,corredor,2,balofo,1,lerdo
+200,7,lerdo,2,balofo,2,lerdo,1,balofo
+201,3,balofo,4,lerdo,4,lerdo,2,corredor
+202,7,corredor,5,lerdo,3,lerdo,1,balofo
+203,,lerdo,,lerdo,,lerdo,,lerdo
+204,,lerdo,,lerdo,,lerdo,,lerdo
+205,,balofo,,balofo,,balofo,,
+206,,corredor,,corredor,,corredor,,
+207,1,necromante,1,necromante,1,necromante,1,necromante
+208,1,necromante,1,necromante,1,necromante,1,necromante
+209,1,necromante,1,necromante,1,necromante,1,necromante
+210,1,necromante,1,necromante,1,necromante,1,necromante
+211,1,necromante,1,necromante,1,necromante,1,necromante
+212,1,necromante,1,necromante,1,necromante,1,necromante
+213,1,horda,1,horda,1,horda,1,horda
+214,1,horda,1,horda,1,horda,1,horda
+215,1,horda,1,horda,1,horda,1,horda
+216,1,horda,1,horda,1,horda,1,horda
+217,1,horda,1,horda,1,horda,1,horda
+218,1,horda,1,horda,1,horda,1,horda
+219,1,horda,1,horda,1,horda,1,horda
+220,1,horda,1,horda,1,horda,1,horda
+253,2,lerdo maculado,5,lerdo maculado,1,lerdo maculado,1,abominação maculada
+254,3,lerdo maculado,1,lerdo maculado,1,abominação maculada,2,lerdo maculado
+255,6,lerdo maculado,1,abominação maculada,1,lerdo maculado,2,lerdo maculado
+256,1,abominação maculada,2,lerdo maculado,3,lerdo maculado,1,lerdo maculado
+257,6,lerdo,3,lerdo maculado,2,lerdo maculado,1,lerdo maculado
+258,5,lerdo maculado,4,lerdo maculado,1,lerdo maculado,1,lerdo maculado
+259,3,lerdo maculado,2,lerdo maculado,4,lerdo maculado,1,lerdo maculado
+260,2,lerdo maculado,6,lerdo maculado,1,lerdo maculado,1,lerdo maculado
+261,8,lerdo maculado,2,lerdo maculado,2,lerdo maculado,1,lerdo maculado
+262,7,lerdo maculado,2,lerdo maculado,2,lerdo maculado,1,lerdo maculado
+263,3,lerdo maculado,4,lerdo maculado,4,lerdo maculado,1,lerdo maculado
+264,3,lerdo maculado,5,lerdo maculado,3,lerdo maculado,1,lerdo maculado
+265,1,horda,1,horda,1,horda,1,horda
+266,1,horda,1,horda,1,horda,1,horda
