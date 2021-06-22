@@ -45,14 +45,19 @@ export function Dashboard({ baralho }: DashboardProps) {
   useEffect(() => {
     setZumbiAtual(cardAtual[perigo]);
 
+    let cardsSobrando = cardsRemanecentes.filter(c => c.id !== cardAtual.id)
+
+    if (!!cardsRemanecentes.length && cardsSobrando.length !== cardsRemanecentes.length) {
+      setCardsRemanecentes(cardsSobrando)
+    }
+  }, [cardAtual, perigo, cardsRemanecentes]);
+
+  useEffect(() => {
     if (!cardsRemanecentes.length) {
       const cardsEmbaralhados = baralho;
       setCardsRemanecentes(cardsEmbaralhados);
-    } else {
-      let cardsSobrando = cardsRemanecentes.filter(c => c.id !== cardAtual.id)
-      setCardsRemanecentes(cardsSobrando)
     }
-  }, [cardAtual, perigo, cardsRemanecentes, baralho]);
+  }, [cardsRemanecentes, baralho])
 
   function handleProximoCard() {
     const indexCard = Math.floor(Math.random() * (cardsRemanecentes.length - 1 - 0 + 1)) + 0
