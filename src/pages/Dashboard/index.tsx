@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Zumbis } from "./Zumbis";
 import { Perigo } from "./Perigo";
 
+import { Container } from './styles'
+
 interface PerigoZumbi {
   quantidade: number;
   tipo:
@@ -62,7 +64,7 @@ export function Dashboard({ baralho }: DashboardProps) {
   }
 
   return (
-    <>
+    <Container>
       <Perigo perigo={perigo} setPerigo={setPerigo} />
       <button onClick={handleProximoCard}>
         {cardAtual.id}
@@ -70,6 +72,6 @@ export function Dashboard({ baralho }: DashboardProps) {
       </button>
       <br />
       <Zumbis zumbi={zumbiAtual} />
-    </>
+    </Container>
   );
 }
