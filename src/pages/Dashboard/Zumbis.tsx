@@ -1,5 +1,3 @@
-import { Typography } from "@material-ui/core";
-
 interface PerigoZumbi {
   quantidade: number;
   tipo:
@@ -26,15 +24,15 @@ export const Zumbis = ({ zumbi }: ZumbisProps) => {
   };
 
   const nenhumZumbi = () => <>
-      <Typography variant="h5" component="h1" align="center">
+      <span>
         não veio nada 🍀😁
-      </Typography>
+      </span>
   </>;
   const ativacaoExtra = () => (
     <>
-      <Typography variant="h5" component="h1" align="center">
+      <span>
         <strong>nova ativação de: </strong> {nomePlural()} 😱
-      </Typography>
+      </span>
     </>
   );
 
@@ -59,9 +57,9 @@ export const Zumbis = ({ zumbi }: ZumbisProps) => {
       {ehAtivacaoExtra() && ativacaoExtra()}
       {ehVazio() && nenhumZumbi()}
       {ehNormal() && (
-        <Typography variant="h5" component="h1" align="center">
+        <span>
           🔥 <strong>{zumbi.quantidade}</strong> {zumbi.tipo} 🔥
-        </Typography>
+        </span>
       )}
     </>
   );

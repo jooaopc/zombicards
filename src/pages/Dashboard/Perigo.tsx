@@ -1,5 +1,3 @@
-import { Radio, RadioGroup, FormControlLabel } from "@material-ui/core";
-
 interface PerigoProps {
   perigo: CorPerigo;
   setPerigo: (p: CorPerigo) => void;
@@ -9,6 +7,9 @@ type CorPerigo = "azul" | "amarelo" | "laranja" | "vermelho";
 
 export const Perigo = ({ perigo, setPerigo }: PerigoProps) => {
   return (
+      <>
+        a
+    {/*
     <RadioGroup row aria-label="position" name="perigo">
       <FormControlLabel
         control={<Radio color="primary" />}
@@ -35,5 +36,7 @@ export const Perigo = ({ perigo, setPerigo }: PerigoProps) => {
         label="Vermelho"
       />
     </RadioGroup>
+      */}
+      </>
   );
 };

@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { Dashboard } from "./pages/Dashboard";
-import { Container } from "@material-ui/core";
 
 import cards from './store.json'
 
@@ -34,9 +33,9 @@ function App() {
     setTypedcards(t)
   }, [])
   return (
-  <Container>
+  <>
     <Dashboard baralho={typedcards} />
-  </Container>
+  </>
   );
 }
 

@@ -1,6 +1,3 @@
-import { Button, FormGroup } from "@material-ui/core";
-import { FiberNew } from "@material-ui/icons";
-
 import { useState, useEffect } from "react";
 import { Zumbis } from "./Zumbis";
 import { Perigo } from "./Perigo";
@@ -67,13 +64,10 @@ export function Dashboard({ baralho }: DashboardProps) {
   return (
     <>
       <Perigo perigo={perigo} setPerigo={setPerigo} />
-      <FormGroup>
-        <Button variant="contained" color="primary" onClick={handleProximoCard}>
-          {cardAtual.id}
-          <FiberNew fontSize="large" />
-          {cardsRemanecentes.length}
-        </Button>
-      </FormGroup>
+      <button onClick={handleProximoCard}>
+        {cardAtual.id}
+        {cardsRemanecentes.length}
+      </button>
       <br />
       <Zumbis zumbi={zumbiAtual} />
     </>
