@@ -4,7 +4,12 @@ interface ZombieButton {
   isClicked: boolean
 }
 
-export const Container = styled.button`
+export const Container = styled.div`
+  display: flex;
+  justify-content: center;
+`
+
+export const Button = styled.button`
   background: transparent;
   border: 0;
   padding: 0;

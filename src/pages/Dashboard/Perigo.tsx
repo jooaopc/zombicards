@@ -2,7 +2,8 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   display: flex;
-  padding: 1rem;
+  padding-bottom: 1rem;
+  justify-content: center;
 `
 
 interface ButtonProps {

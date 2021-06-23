@@ -2,7 +2,7 @@ import { useState, ReactNode } from 'react'
 import styled from 'styled-components'
 import spawn from '../../img/zombi-spawn-cards.jpg'
 
-import { Container, InnerCard, CardFace } from './styles'
+import { Container, Button, InnerCard, CardFace } from './styles'
 
 interface CardProps {
   proximoCard: () => void;
@@ -26,6 +26,7 @@ export function Card({ proximoCard, children1, children2, transformChildren1, tr
   }
   return (
     <Container onClick={handleClick} >
+      <Button>
       <InnerCard isClicked={isClicked}>
         <CardFace className="card front">
           {isClicked && transformChildren1}
@@ -36,6 +37,7 @@ export function Card({ proximoCard, children1, children2, transformChildren1, tr
           {isClicked && children2}
         </CardFace>
       </InnerCard>
+      </Button>
     </Container>
   )
 }
