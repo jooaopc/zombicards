@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import spawn from '../../img/zombi-spawn-cards.jpg'
 
 interface ContainerProps {
   perigoColor: string;

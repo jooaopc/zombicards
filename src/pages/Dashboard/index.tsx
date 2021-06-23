@@ -87,7 +87,7 @@ export function Dashboard({ baralho }: DashboardProps) {
 
       <Card
         proximoCard={handleProximoCard}
-        children1={!!zumbiAtual ? <Zumbis zumbi={zumbiAtual} /> : <img src={spawn}/>}
+        children1={!!zumbiAtual ? <Zumbis zumbi={zumbiAtual} /> : <img src={spawn} alt="verso carta de zumbi"/>}
         children2={<Zumbis zumbi={zumbiAtual} />}
       />
 

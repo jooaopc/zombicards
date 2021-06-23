@@ -1,6 +1,4 @@
 import { useState, useEffect, ReactNode } from 'react'
-import styled from 'styled-components'
-import spawn from '../../img/zombi-spawn-cards.jpg'
 
 import { Container, Button, InnerCard, CardFace } from './styles'
 
