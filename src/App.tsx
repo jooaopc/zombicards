@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Dashboard } from "./pages/Dashboard";
+import { GlobalStyle } from './styles/global'
 
 import cards from './store.json'
 
@@ -34,6 +35,7 @@ function App() {
   }, [])
   return (
   <>
+    <GlobalStyle />
     <Dashboard baralho={typedcards} />
   </>
   );

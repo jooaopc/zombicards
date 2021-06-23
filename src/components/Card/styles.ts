@@ -13,7 +13,6 @@ export const Button = styled.button`
   background: transparent;
   border: 0;
   padding: 0;
-  cursor: pointer;
 
   width: 100%;
   max-width: 300px;
