@@ -1,8 +1,11 @@
 import { useState, useEffect } from "react";
 import { Zumbis } from "./Zumbis";
 import { Perigo } from "./Perigo";
+import { Card } from "../../components/Card";
 
 import { Container } from './styles'
+
+import spawn from '../../img/zombi-spawn-cards.jpg'
 
 interface PerigoZumbi {
   quantidade: number;
@@ -65,13 +68,20 @@ export function Dashboard({ baralho }: DashboardProps) {
 
   return (
     <Container>
+      
       <Perigo perigo={perigo} setPerigo={setPerigo} />
-      <button onClick={handleProximoCard}>
-        {cardAtual.id}
-        {cardsRemanecentes.length}
-      </button>
+
+      <Card
+        proximoCard={handleProximoCard}
+        children1={!!zumbiAtual ? <Zumbis zumbi={zumbiAtual} /> : <img src={spawn}/>}
+        transformChildren1={<span></span>}
+        children2={<Zumbis zumbi={zumbiAtual} />}
+        transformChildren2={<span></span>}
+      />
+
+      {cardAtual.id}
+      {cardsRemanecentes.length}
       <br />
-      <Zumbis zumbi={zumbiAtual} />
     </Container>
   );
 }
