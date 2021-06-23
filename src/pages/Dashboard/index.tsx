@@ -3,7 +3,7 @@ import { Zumbis } from "./Zumbis";
 import { Perigo } from "./Perigo";
 import { Card } from "../../components/Card";
 
-import { Container } from './styles'
+import { Container, FooterCard } from './styles'
 
 import spawn from '../../img/zombi-spawn-cards.jpg'
 
@@ -79,9 +79,12 @@ export function Dashboard({ baralho }: DashboardProps) {
         transformChildren2={<span></span>}
       />
 
-      {cardAtual.id}
-      {cardsRemanecentes.length}
-      <br />
+      <FooterCard>
+        <ul>
+          <li>id: {cardAtual.id}</li>
+          <li>{cardsRemanecentes.length}/{baralho.length}</li>
+        </ul>
+      </FooterCard>
     </Container>
   );
 }
