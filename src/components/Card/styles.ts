@@ -56,17 +56,20 @@ export const CardFace = styled.div`
   & > * {
     border: 2px solid var(--black);
     background: var(--white);
-    padding: 3rem;
+    flex: content;
+    margin: 10%;
   }
 
   .empty {
     border: 0;
+    margin: 0;
     padding: 0;
   }
 
 
   img {
     border: 0;
+    margin: 0;
     padding: 0;
     width: 100%;
     max-width: 300px;
