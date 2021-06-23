@@ -88,9 +88,7 @@ export function Dashboard({ baralho }: DashboardProps) {
       <Card
         proximoCard={handleProximoCard}
         children1={!!zumbiAtual ? <Zumbis zumbi={zumbiAtual} /> : <img src={spawn}/>}
-        transformChildren1={<span></span>}
         children2={<Zumbis zumbi={zumbiAtual} />}
-        transformChildren2={<span></span>}
       />
 
       <FooterCard>
