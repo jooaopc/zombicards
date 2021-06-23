@@ -1,6 +1,16 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
+  :root {
+    --red: red;
+    --yellow: yellow;
+    --orange: orange;
+    --blue: blue;
+
+    --text-body: #969cb3;
+    --background: #171923;
+  }
+
   * {
     margin: 0;
     padding: 0;
@@ -8,6 +18,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html {
+    background: var(--background);
+    color: var(--text-body);
+
     @media(max-width: 1080px){
       font-size: 93.75%
     }
