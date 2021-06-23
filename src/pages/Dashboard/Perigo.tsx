@@ -14,7 +14,7 @@ interface ButtonProps {
 const Button = styled.button<ButtonProps>`
   padding: 1rem;
 
-  background: ${p => p.color};
+  background: var(--${p => p.color});
   opacity: ${p => p.active ? '1' : '0.6'};
   border: ${p => p.active ? '0.5rem solid black' : '0px'};
   font-weight: bold;

@@ -11,7 +11,7 @@ export const Container = styled.main<ContainerProps>`
   padding: 2.5rem 1rem;
   height: 100vh;
 
-  background-image: linear-gradient(to top, ${p => p.perigoColor}, var(--background));
+  background-image: linear-gradient(to top, var(--${p => p.perigoColor}), var(--background));
 `
 
 export const FooterCard = styled.div`
