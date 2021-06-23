@@ -7,6 +7,13 @@ import { Container, FooterCard } from './styles'
 
 import spawn from '../../img/zombi-spawn-cards.jpg'
 
+const perigoColorDicionario = {
+  azul: "blue",
+  amarelo: "yellow",
+  laranja: "orange",
+  vermelho: "red"
+}
+
 interface PerigoZumbi {
   quantidade: number;
   tipo:
@@ -39,6 +46,7 @@ export function Dashboard({ baralho }: DashboardProps) {
   const [cardAtual, setCardAtual] = useState({} as CardZumbi);
   const [zumbiAtual, setZumbiAtual] = useState({} as PerigoZumbi);
   const [perigo, setPerigo] = useState("azul" as CorPerigo);
+  const [perigoColor, setPerigoColor] = useState("");
 
   useEffect(() => {
     setCardsRemanecentes(baralho);
@@ -61,13 +69,19 @@ export function Dashboard({ baralho }: DashboardProps) {
     }
   }, [cardsRemanecentes, baralho])
 
+  useEffect(() => {
+    setPerigoColor(perigoColorDicionario[perigo])
+  }, [perigo]);
+
   function handleProximoCard() {
     const indexCard = Math.floor(Math.random() * (cardsRemanecentes.length - 1 - 0 + 1)) + 0
     setCardAtual(cardsRemanecentes[indexCard]);
   }
 
   return (
-    <Container>
+    <Container
+      perigoColor={perigoColor}
+    >
       
       <Perigo perigo={perigo} setPerigo={setPerigo} />
 
