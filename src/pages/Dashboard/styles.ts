@@ -5,8 +5,7 @@ interface ContainerProps {
 }
 
 export const Container = styled.main<ContainerProps>`
-  max-width: 1120px;
-  margin: 0 auto;
+  margin: 0 0;
   padding: 2.5rem 1rem;
   height: 100vh;
 
