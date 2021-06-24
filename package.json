@@ -1,6 +1,6 @@
 {
-  "name": "zombicide_cards",
-  "homepage": "https://jooaopc.github.io/zombicide_cards",
+  "name": "zombicards",
+  "homepage": "https://jooaopc.github.io/zombicards",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

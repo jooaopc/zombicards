@@ -1,4 +1,4 @@
-# zombicide
+# zombicards
 
 ```sh
 npm i
