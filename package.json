@@ -66,5 +66,8 @@
   },
   "cypress-cucumber-preprocessor": {
       "nonGlobalStepDefinitions": true
+  },
+  "engines": {
+      "yarn": "please-use-npm"
   }
 }
