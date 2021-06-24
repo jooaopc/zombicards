@@ -1,8 +1,5 @@
 # zombicards
 
-```sh
-npm i
+Substituição das cartas de zumbis do jogo de tabuleiro Zombicide
 
-npm run update:store
-npm start
-```
+- [Desenvolvimento](CONTRIBUTING.md)
