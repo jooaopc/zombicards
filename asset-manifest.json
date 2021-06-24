@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "/zombicide_cards/static/js/main.f0f3261a.chunk.js",
-    "main.js.map": "/zombicide_cards/static/js/main.f0f3261a.chunk.js.map",
-    "runtime-main.js": "/zombicide_cards/static/js/runtime-main.048b9a91.js",
-    "runtime-main.js.map": "/zombicide_cards/static/js/runtime-main.048b9a91.js.map",
-    "static/js/2.d6c47c34.chunk.js": "/zombicide_cards/static/js/2.d6c47c34.chunk.js",
-    "static/js/2.d6c47c34.chunk.js.map": "/zombicide_cards/static/js/2.d6c47c34.chunk.js.map",
-    "static/js/3.f6024921.chunk.js": "/zombicide_cards/static/js/3.f6024921.chunk.js",
-    "static/js/3.f6024921.chunk.js.map": "/zombicide_cards/static/js/3.f6024921.chunk.js.map",
-    "index.html": "/zombicide_cards/index.html",
-    "service-worker.js": "/zombicide_cards/service-worker.js",
-    "service-worker.js.map": "/zombicide_cards/service-worker.js.map",
-    "static/js/2.d6c47c34.chunk.js.LICENSE.txt": "/zombicide_cards/static/js/2.d6c47c34.chunk.js.LICENSE.txt",
-    "static/media/zombi-spawn-cards.e3e0bf1a.jpg": "/zombicide_cards/static/media/zombi-spawn-cards.e3e0bf1a.jpg"
+    "main.js": "/zombicards/static/js/main.471e8d69.chunk.js",
+    "main.js.map": "/zombicards/static/js/main.471e8d69.chunk.js.map",
+    "runtime-main.js": "/zombicards/static/js/runtime-main.bb269f4c.js",
+    "runtime-main.js.map": "/zombicards/static/js/runtime-main.bb269f4c.js.map",
+    "static/js/2.568cfa10.chunk.js": "/zombicards/static/js/2.568cfa10.chunk.js",
+    "static/js/2.568cfa10.chunk.js.map": "/zombicards/static/js/2.568cfa10.chunk.js.map",
+    "static/js/3.3c9cbd0c.chunk.js": "/zombicards/static/js/3.3c9cbd0c.chunk.js",
+    "static/js/3.3c9cbd0c.chunk.js.map": "/zombicards/static/js/3.3c9cbd0c.chunk.js.map",
+    "index.html": "/zombicards/index.html",
+    "service-worker.js": "/zombicards/service-worker.js",
+    "service-worker.js.map": "/zombicards/service-worker.js.map",
+    "static/js/2.568cfa10.chunk.js.LICENSE.txt": "/zombicards/static/js/2.568cfa10.chunk.js.LICENSE.txt",
+    "static/media/zombi-spawn-cards.e3e0bf1a.jpg": "/zombicards/static/media/zombi-spawn-cards.e3e0bf1a.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.048b9a91.js",
-    "static/js/2.d6c47c34.chunk.js",
-    "static/js/main.f0f3261a.chunk.js"
+    "static/js/runtime-main.bb269f4c.js",
+    "static/js/2.568cfa10.chunk.js",
+    "static/js/main.471e8d69.chunk.js"
   ]
 }
