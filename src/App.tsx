@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Dashboard } from "./pages/Dashboard";
 import { GlobalStyle } from './styles/global'
+import GithubCorner from 'react-github-corner';
 
 import cards from './store.json'
 
@@ -36,6 +37,7 @@ function App() {
   return (
   <>
     <GlobalStyle />
+    <GithubCorner href="https://github.com/jooaopc/zombicards" />
     <Dashboard baralho={typedcards} />
   </>
   );
