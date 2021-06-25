@@ -1,9 +1,16 @@
 import styled from 'styled-components'
 
 const Container = styled.div`
+  width: 100%;
   display: flex;
-  padding-bottom: 1rem;
   justify-content: center;
+
+  div {
+    display: flex;
+    max-width: 1000px;
+  }
+
+  padding-bottom: 1rem;
 `
 
 interface ButtonProps {
@@ -12,12 +19,12 @@ interface ButtonProps {
 }
 
 const Button = styled.button<ButtonProps>`
-  padding: 1rem;
+  padding: 1rem 2rem;
 
   width: 100%;
   background: var(--${p => p.color});
   opacity: ${p => p.active ? '1' : '0.1'};
-  border: ${p => p.active ? '0.1rem solid black' : '0px'};
+  border: ${p => p.active ? '0.2rem solid black' : '0px'};
   font-weight: bold;
 `
 
@@ -31,6 +38,7 @@ type CorPerigo = "azul" | "amarelo" | "laranja" | "vermelho";
 export const Perigo = ({ perigo, setPerigo }: PerigoProps) => {
   return (
       <Container>
+      <div>
         <Button
           aria-label="Azul"
           color="blue"
@@ -58,6 +66,7 @@ export const Perigo = ({ perigo, setPerigo }: PerigoProps) => {
           active={perigo === "vermelho"}
           onClick={_ => setPerigo("vermelho")}
         />
+      </div>
       </Container>
   );
 };
