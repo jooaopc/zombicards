@@ -1,3 +1,11 @@
+import styled from 'styled-components'
+
+const Quantidade = styled.strong`
+  &::before {
+    content: 'x';
+  }
+`
+
 interface PerigoZumbi {
   quantidade: number;
   tipo:
@@ -25,17 +33,25 @@ export const Zumbis = ({ zumbi }: ZumbisProps) => {
 
   const nenhumZumbi = () => <>
       <span>
-        não veio nada 🍀😁
+        🍀😁🎉
+      </span>
+      <span>
+        não veio nada
       </span>
   </>;
   const ativacaoExtra = () => (
     <>
       <span>
-        <strong>nova ativação de: </strong> {nomePlural()} 😱
+        ⚡⚡⚡
+      </span>
+      <span>
+        <strong>nova ativação</strong>
+      </span>
+      <span>
+        {nomePlural()}
       </span>
     </>
   );
-
   const ehVazio = () => {
     if (!zumbi) return false;
     return !zumbi.tipo && !zumbi.quantidade;
@@ -57,9 +73,17 @@ export const Zumbis = ({ zumbi }: ZumbisProps) => {
       {ehAtivacaoExtra() && ativacaoExtra()}
       {ehVazio() && nenhumZumbi()}
       {ehNormal() && (
+        <>
         <span>
-          🔥 <strong>{zumbi.quantidade}</strong> {zumbi.tipo} 🔥
+          🔥🔥🔥
         </span>
+        <span>
+          <Quantidade>{zumbi.quantidade}</Quantidade>
+        </span>
+        <span>
+          {zumbi.tipo}
+        </span>
+        </>
       )}
     </>
   );

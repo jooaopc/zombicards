@@ -41,6 +41,7 @@ export const CardFace = styled.div`
   right: 0;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
@@ -56,8 +57,15 @@ export const CardFace = styled.div`
   & > * {
     border: 2px solid var(--black);
     background: var(--white);
-    flex: content;
-    margin: 10%;
+    font-size: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0.5rem 0;
+
+    width: 80%;
   }
 
   .empty {
