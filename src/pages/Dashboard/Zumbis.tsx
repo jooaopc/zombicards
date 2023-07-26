@@ -24,13 +24,6 @@ interface ZumbisProps {
 }
 
 export const Zumbis = ({ zumbi }: ZumbisProps) => {
-  const nomePlural = () => {
-    if (zumbi.tipo === "balofo" || zumbi.tipo === "lerdo") {
-      return `${zumbi.tipo}s`;
-    }
-    return `${zumbi.tipo}es`;
-  };
-
   const nenhumZumbi = () => <>
       <span>
         🍀😁🎉
@@ -48,7 +41,7 @@ export const Zumbis = ({ zumbi }: ZumbisProps) => {
         <strong>nova ativação</strong>
       </span>
       <span>
-        {nomePlural()}
+        {zumbi.tipo}
       </span>
     </>
   );

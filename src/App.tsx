@@ -20,6 +20,7 @@ interface PerigoZumbi {
 
 interface CardZumbi {
   id: number;
+  collection: string;
   azul: PerigoZumbi;
   amarelo: PerigoZumbi;
   laranja: PerigoZumbi;

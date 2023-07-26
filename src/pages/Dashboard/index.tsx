@@ -31,6 +31,7 @@ type CorPerigo = "azul" | "amarelo" | "laranja" | "vermelho";
 
 interface CardZumbi {
   id: number;
+  collection: string;
   azul: PerigoZumbi;
   amarelo: PerigoZumbi;
   laranja: PerigoZumbi;
@@ -93,8 +94,8 @@ export function Dashboard({ baralho }: DashboardProps) {
 
       <FooterCard>
         <ul>
-          <li>id: {cardAtual.id}</li>
           <li>{cardsRemanecentes.length}/{baralho.length}</li>
+          <li>{cardAtual.collection}#{cardAtual.id}</li>
         </ul>
       </FooterCard>
     </Container>

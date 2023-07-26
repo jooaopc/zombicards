@@ -8,6 +8,7 @@ fs.createReadStream("store.csv")
   .on("data", (d) => {
     let card = {
       id: parseInt(d.id),
+      collection: d["collection"],
     };
 
     card.vermelho = {
